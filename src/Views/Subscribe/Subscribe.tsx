@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci'
 import { BaseTitle } from '../../Components'

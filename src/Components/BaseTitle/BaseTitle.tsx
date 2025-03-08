@@ -1,11 +1,10 @@
-import React, { LegacyRef } from 'react'
+import { LegacyRef } from 'react'
 
 type BaseTitleType = {
   text: string
   scrollRef?: LegacyRef<HTMLParagraphElement>
   whiteColor?: boolean
   barToSide?: 'l' | 'r'
-
 }
 
 const BaseTitle = ({ text, whiteColor, scrollRef }: BaseTitleType) => {

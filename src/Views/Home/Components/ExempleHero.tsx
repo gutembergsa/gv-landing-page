@@ -1,4 +1,4 @@
-import React, { LegacyRef, useState } from 'react'
+import { LegacyRef, useState } from 'react'
 import { CardsGroup, Carousel } from '.'
 import { ExempleImageLabels, exempleImages } from '../Home'
 

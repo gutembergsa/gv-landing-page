@@ -1,13 +1,12 @@
-// import { StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { CarouselProvider } from 'pure-react-carousel'
 
 import { Home, Subscribe } from './Views'
 
 import './styles/global.css'
 
-import { StrictMode } from 'react'
-import { CarouselProvider } from 'pure-react-carousel'
 
 const carouselConfig = {
   naturalSlideWidth: 100,

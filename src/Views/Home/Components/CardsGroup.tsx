@@ -1,4 +1,3 @@
-import React from 'react'
 import { CardHome1 } from '../../../Components'
 import { ExempleImageLabels } from '../Home'
 
