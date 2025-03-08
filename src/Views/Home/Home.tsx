@@ -102,14 +102,10 @@ const Home = () => {
         <section className="mt-100 max-sm:mb-60">
           <div className="relative text-center max-lg:mb-0 pl-10 pr-10">
             <BaseTitle scrollRef={scrollToRef1} text="COMO FUNCIONA" />
-            <p className="max-w-200 w-full m-auto mt-20 text-base text-justify font-bold max-sm:mt-10 max-sm:mb-20">
+            <p className="max-w-200 w-full m-auto mt-20 text-base font-bold max-sm:mt-10 max-sm:mb-20">
               CÂMERAS POSICIONADAS ESTRATEGICAMENTE IDENTIFICAM E AGEM DE ACORDO
               COM A TAREFA ESPECIFICADA, ALIMENTANDO SERVIDORES E IAs QUE GERAM
               DADOS EM TEMPO REAL, USADOS PARA ALIMENTAR SISTEMAS WEB E MOBILE.
-              O SISTEMA TAMBÉM TEM A POSSIBILIDADE DE INTEGRAÇÃO COM SISTEMAS JÁ
-              EXISTENTES NA SUA EMPRESA. NOSSO TIME CONTA COM PROFISSIONAIS
-              CAPACITADOS PARA REALIZAR ESSAS TAREFAS E ENTREGAR UM SISTEMA DE
-              ALTA QUALIDADE, SEGURO E QUE ATENDE SUAS NECESSIDADES.
             </p>
             <p className="flex justify-center gap-35 mt-30 mb-60 max-md:gap-10 max-md:mt-20 max-sm:mb-25 h-xl:mb-25 h-lg:mb-10">
               <img src={cam_image} alt="can" className="w-20" />
