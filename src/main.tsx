@@ -5,9 +5,6 @@ import { CarouselProvider } from 'pure-react-carousel'
 
 import { Home, Subscribe } from './Views'
 
-import './styles/global.css'
-
-
 const carouselConfig = {
   naturalSlideWidth: 100,
   naturalSlideHeight: 100,
