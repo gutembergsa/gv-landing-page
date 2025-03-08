@@ -34,7 +34,7 @@ const Subscribe = () => {
               Entre em contato e vamos resolver junto as dores da sua
               empresa.{' '}
             </p>
-            <p className="mt-5 text-xl/snug text-zinc-200 font-black max-w-150 w-full max-xl:leading-8 max-xl:text-lg max-xl:max-w-110">
+            <p className="mt-5 text-xl/snug text-white font-black max-w-150 w-full max-xl:leading-8 max-xl:text-lg max-xl:max-w-110">
               Sua solução em sistema de visão, customizada e feita sob medida
               esta aqui!
             </p>
@@ -42,7 +42,7 @@ const Subscribe = () => {
           <img
             src={accident_img}
             alt="accident_img"
-            className="w-120 h-120  max-xl:w-90 max-xl:h-90  max-lg:w-70 max-lg:h-70 max-md:hidden"
+            className="w-120 h-120  max-2xl:w-100 max-2xl:h-100  max-xl:w-90 max-xl:h-90  max-lg:w-70 max-lg:h-70 max-md:hidden"
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -50,7 +50,7 @@ const Subscribe = () => {
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base/7 font-semibold text-gray-900 max-md:text-md">
                 Nos de a oportunidade de entender seu problema e mostrar todas
-                as possibilidades de solução.
+                as possibilidades de a olhAI tem a oferecer.
               </h2>
               <p className="mt-1 text-sm/6 text-gray-600 max-md:text-2sm">
                 Informe os seus dados de contato para que possamos conversar.
@@ -62,7 +62,7 @@ const Subscribe = () => {
                     htmlFor="name"
                     className="block text-sm/6 font-medium text-gray-900"
                   >
-                    Nome
+                    Nome <span className="text-rose-800">*</span>
                   </label>
                   <div className="mt-2">
                     <input
@@ -80,11 +80,12 @@ const Subscribe = () => {
                     htmlFor="company"
                     className="block text-sm/6 font-medium text-gray-900"
                   >
-                    Empresa
+                    Empresa <span className="text-rose-800">*</span>
                   </label>
                   <div className="mt-2">
                     <input
                       {...register('company')}
+                      required
                       type="text"
                       autoComplete="family-name"
                       className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#87BF74] autofill-white sm:text-sm/6"
@@ -97,11 +98,12 @@ const Subscribe = () => {
                     htmlFor="email"
                     className="block text-sm/6 font-medium text-gray-900"
                   >
-                    Email
+                    Email <span className="text-rose-800">*</span>
                   </label>
                   <div className="mt-2">
                     <input
                       {...register('email')}
+                      required
                       type="email"
                       autoComplete="email"
                       className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#87BF74] autofill-white sm:text-sm/6"
@@ -114,7 +116,7 @@ const Subscribe = () => {
                     htmlFor="phone"
                     className="block text-sm/6 font-medium text-gray-900"
                   >
-                    Telefone
+                    Telefone <span className="text-rose-800">*</span>
                   </label>
                   <div className="mt-2 grid grid-cols-1">
                     <input

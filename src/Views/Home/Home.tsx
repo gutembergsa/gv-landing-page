@@ -71,14 +71,14 @@ const Home = () => {
           <div className="relative flex justify-center space-x-20 max-lg:space-x-0">
             <div>
               <h1 className="text-5xl/snug text-gray-700 font-black max-w-120 w-full max-xl:leading-15 max-lg:leading-13 max-md:leading-10 max-md:text-3xl max-md:m-auto h-base:text-4xl/[40px]">
-                O poder da IA de uma forma que realmente faça sentido.
+                O poder da IA de uma forma que realmente faz sentido.
               </h1>
               <h2 className="max-w-150 w-full text-xl text-gray-700 mt-15 mb-15  max-md:text-lg max-md:mt-15 max-md:mb-15 h-base:mt-12 h-base:mb-12">
-                Use sistemas de visão para alcaçar melhorias reais em qualidade,
-                segurança, economia de ativos e muito mais
+                Use sistemas de visão para alcançar melhorias reais em
+                qualidade, segurança, economia de recursos e muito mais.
               </h2>
               <Button
-                content="FAZ SENTIDO? CLIQUE AQUI E ENTRE EM CONTATO"
+                content="FAZ SENTIDO? CLIQUE AQUI E REGISTRE-SE!"
                 onClick={() => navigate('/subscribe')}
               />
             </div>
@@ -102,10 +102,14 @@ const Home = () => {
         <section className="mt-100 max-sm:mb-60">
           <div className="relative text-center max-lg:mb-0 pl-10 pr-10">
             <BaseTitle scrollRef={scrollToRef1} text="COMO FUNCIONA" />
-            <p className="max-w-200 w-full m-auto mt-20 text-base font-bold max-sm:mt-10 max-sm:mb-20">
-              UTILIZAMOS CAMERAS POSICIONADAS ESTRATEGICAMENTE, QUE VÃO
-              IDENTIFICAR E AGIR DE A ACORDO COM A TAREFA ESPECIFICADA
-              ALIMENTANDO APLICAÇÕES WEB E MOBILE COM OS DADOS DA IA.
+            <p className="max-w-200 w-full m-auto mt-20 text-base text-justify font-bold max-sm:mt-10 max-sm:mb-20">
+              CÂMERAS POSICIONADAS ESTRATEGICAMENTE IDENTIFICAM E AGEM DE ACORDO
+              COM A TAREFA ESPECIFICADA, ALIMENTANDO SERVIDORES E IAs QUE GERAM
+              DADOS EM TEMPO REAL, USADOS PARA ALIMENTAR SISTEMAS WEB E MOBILE.
+              O SISTEMA TAMBÉM TEM A POSSIBILIDADE DE INTEGRAÇÃO COM SISTEMAS JÁ
+              EXISTENTES NA SUA EMPRESA. NOSSO TIME CONTA COM PROFISSIONAIS
+              CAPACITADOS PARA REALIZAR ESSAS TAREFAS E ENTREGAR UM SISTEMA DE
+              ALTA QUALIDADE, SEGURO E QUE ATENDE SUAS NECESSIDADES.
             </p>
             <p className="flex justify-center gap-35 mt-30 mb-60 max-md:gap-10 max-md:mt-20 max-sm:mb-25 h-xl:mb-25 h-lg:mb-10">
               <img src={cam_image} alt="can" className="w-20" />
@@ -133,11 +137,11 @@ const Home = () => {
             <p className="text-2xl font-black">Mini Demo</p>
             <div className="w-40 h-1 bg-black rounded-2xl  mt-3 mb-10 max-md:w-30 max-md:mb-6 max-sm:w-27"></div>
             <p className="text-lg font-medium max-md:text-base">
-              A OlhAI possui um time de especialistas que junto com você irão
-              entender e trazer soluções para seu negocio. <br />
+              A OlhAI possui um time de especialistas que, junto com você, irão
+              entender e trazer soluções para o seu negócio. <br />
               <span className="text-white text-base/10 font-bold max-md:leading-4">
                 {' '}
-                Veja aqui nosso modulo de contagem em ação.
+                Veja aqui nosso módulo de contagem em ação.
               </span>
             </p>
           </div>
