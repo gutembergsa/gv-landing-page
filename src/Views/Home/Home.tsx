@@ -102,7 +102,7 @@ const Home = () => {
         <section className="mt-100 max-sm:mb-60">
           <div className="relative text-center max-lg:mb-0 pl-10 pr-10">
             <BaseTitle scrollRef={scrollToRef1} text="COMO FUNCIONA" />
-            <p className="max-w-200 w-full m-auto mt-20 text-base font-bold max-md:text-justify max-sm:mt-10 max-sm:mb-20">
+            <p className="max-w-200 w-full m-auto mt-20 text-base font-bold max-sm:mt-10 max-sm:mb-20">
               CÂMERAS POSICIONADAS ESTRATEGICAMENTE IDENTIFICAM E AGEM DE ACORDO
               COM A TAREFA ESPECIFICADA, ALIMENTANDO SERVIDORES E IAs QUE GERAM
               DADOS EM TEMPO REAL, USADOS PARA ALIMENTAR SISTEMAS WEB E MOBILE.
