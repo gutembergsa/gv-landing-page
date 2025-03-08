@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@config "./tailwind.config.js";
+
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  --default-font-family: inter;
+
+  /* Extra media queries */
+  --h-sm: '(max-height: 400px)';
+  --h-md: '(max-height: 600px)';
+  --h-lg: '(max-height: 700px)';
+  --h-xl: '(max-height: 800px)';
+  --h-2xl: '(max-height: 1000px)';
+  --max-2sm: '(max-height: 420px)';
+  --max-3sm: '(max-height: 360px)';
+}
+
+@layer utilities {
+  .autofill-white:-webkit-autofill,
+  .autofill-white:-webkit-autofill:hover,
+  .autofill-white:-webkit-autofill:focus,
+  .autofill-white:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+}
