@@ -16,13 +16,12 @@ const Subscribe = () => {
   const { register, handleSubmit } = useForm<Inputs>()
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log({ data })
-    // axios
-    //   .post('https://getform.io/f/avrwyjoa', data, {
-    //     headers: { Accept: 'application/json' },
-    //   })
-    //   .then((response) => console.log(response))
-    //   .catch((error) => console.log(error))
+    axios
+      .post('https://getform.io/f/avrwyjoa', data, {
+        headers: { Accept: 'application/json' },
+      })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
   }
 
   return (
