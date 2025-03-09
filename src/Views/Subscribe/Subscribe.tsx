@@ -14,7 +14,7 @@ type Inputs = {
 }
 
 const Subscribe = () => {
-  const { register, handleSubmit } = useForm<Inputs>()
+  const { register, handleSubmit, reset } = useForm<Inputs>()
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     axios
@@ -23,6 +23,7 @@ const Subscribe = () => {
       })
       .then((response) => console.log(response))
       .catch((error) => console.log(error))
+    reset()
   }
 
   return (
@@ -154,7 +155,7 @@ const Subscribe = () => {
             <div className="mt-6 flex items-center justify-end gap-x-6">
               <button
                 type="submit"
-                className="cursor-pointer rounded-md bg-[#87BF74] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#87BF7477] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#87BF7477]"
+                className="cursor-pointer rounded-md bg-[#87BF74] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#87BF7477] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#87BF7477] active:bg-[#87BF74E0] active:translate-y-[2px]"
               >
                 Enviar
               </button>
