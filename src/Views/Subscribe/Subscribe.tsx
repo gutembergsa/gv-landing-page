@@ -4,6 +4,7 @@ import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci'
 import { BaseTitle } from '../../Components'
 
 import accident_img from '../../assets/image_7.png'
+import { useState } from 'react'
 
 type Inputs = {
   name: string
@@ -16,13 +17,24 @@ type Inputs = {
 const Subscribe = () => {
   const { register, handleSubmit, reset } = useForm<Inputs>()
 
+  const [loading, setLoading] = useState(false)
+  const [sent, setSent] = useState(false)
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
+    setLoading(true)
     axios
       .post('https://getform.io/f/avrwyjoa', data, {
         headers: { Accept: 'application/json' },
       })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error))
+      .then((response) => {
+        console.log(response)
+        setLoading(false)
+        setSent(true)
+      })
+      .catch((error) => {
+        console.log(error)
+        setLoading(false)
+      })
     reset()
   }
 
@@ -153,11 +165,13 @@ const Subscribe = () => {
               </div>
             </div>
             <div className="mt-6 flex items-center justify-end gap-x-6">
+              {sent ? <span className="text-black">Enviado</span> : <></>}
               <button
                 type="submit"
-                className="cursor-pointer rounded-md bg-[#87BF74] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#87BF7477] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#87BF7477] active:bg-[#87BF74E0] active:translate-y-[2px]"
+                disabled={sent}
+                className="cursor-pointer rounded-md bg-[#87BF74] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#87BF7477] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#87BF7477] active:bg-[#87BF74E0] active:translate-y-[2px] disabled:bg-[#aab4a7e0] disabled:active:bg-[#aab4a7e0]"
               >
-                Enviar
+                {loading ? 'Enviando' : 'Enviar'}
               </button>
             </div>
           </div>
