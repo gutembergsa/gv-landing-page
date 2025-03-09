@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci'
 import { BaseTitle } from '../../Components'
@@ -45,6 +46,8 @@ const Subscribe = () => {
           />
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <input type="hidden" name="_gotcha" className="hidden" />
+
           <div className="space-y-12 bg-white shadow-[0px_-0px_10px_rgba(0,0,0,0.3)] p-20 rounded-md  max-sm:p-7">
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base/7 font-semibold text-gray-900 max-md:text-md">
