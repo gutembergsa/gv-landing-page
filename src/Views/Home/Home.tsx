@@ -169,16 +169,12 @@ const Home = () => {
             <div>
               <p>FALE CONOSCO</p>
               <p className="font-normal pt-5">
-                <a href="mailto:contato@olhai.com">contato@olhai.com</a>
+                <a href="mailto:contato@olhai.com">contato@olhai.tech</a>
               </p>
             </div>
             <div>
               <p>NOS SIGA</p>
               <p className="flex justify-evenly gap-2 pt-5">
-                <CiFacebook
-                  size={40}
-                  className="cursor-pointer max-sm:w-10 max-sm:h-10"
-                />
                 <CiInstagram
                   size={40}
                   className="cursor-pointer max-sm:w-10 max-sm:h-10"
@@ -186,6 +182,12 @@ const Home = () => {
                 <CiLinkedin
                   size={40}
                   className="cursor-pointer max-sm:w-10 max-sm:h-10"
+                  onClick={() => {
+                      window.open(
+                        'https://www.linkedin.com/company/olhai-tech',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );
+                  }}
                 />
               </p>
             </div>
