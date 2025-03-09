@@ -168,7 +168,7 @@ const Subscribe = () => {
               {sent ? <span className="text-black">Enviado</span> : <></>}
               <button
                 type="submit"
-                disabled={sent}
+                disabled={sent || loading}
                 className="cursor-pointer rounded-md bg-[#87BF74] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#87BF7477] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#87BF7477] active:bg-[#87BF74E0] active:translate-y-[2px] disabled:bg-[#aab4a7e0] disabled:active:bg-[#aab4a7e0]"
               >
                 {loading ? 'Enviando' : 'Enviar'}
