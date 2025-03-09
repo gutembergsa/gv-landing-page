@@ -67,7 +67,7 @@ const Home = () => {
       <main>
         <Nav />
         {/* Seção inicial */}
-        <section className="flex mt-50 flex-col ml-10 mr-10 max-lg:mt-40 max-md:text-center max-md:mt-70 h-lg:mt-30">
+        <section className="flex mt-50 flex-col ml-10 mr-10 max-lg:mt-40 max-md:text-center max-md:mt-70 h-xl:mt-30">
           <div className="relative flex justify-center space-x-20 max-lg:space-x-0">
             <div>
               <h1 className="text-5xl/snug text-gray-700 font-black max-w-120 w-full max-xl:leading-15 max-lg:leading-13 max-md:leading-10 max-md:text-3xl max-md:m-auto h-base:text-4xl/[40px]">
