@@ -21,7 +21,7 @@ const Subscribe = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     setLoading(true)
     axios
-      .post('https://getform.io/f/avrwyjoa', data, {
+      .post('https://formspree.io/f/xzzeploa', data, {
         headers: { Accept: 'application/json' },
       })
       .then((response) => {
