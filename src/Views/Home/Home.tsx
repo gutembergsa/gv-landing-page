@@ -1,6 +1,6 @@
 import { RefObject, useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
-import { CiInstagram, CiFacebook, CiLinkedin } from 'react-icons/ci'
+import { CiInstagram, CiLinkedin } from 'react-icons/ci'
 
 import { Nav, Button, BaseTitle } from '../../Components'
 import { CardGroupFlex } from './Components'
@@ -98,7 +98,7 @@ const Home = () => {
             />
           </div>
         </section>
-        {/* Seção interativa */}
+        {/* Seção exemplos */}
         <section className="mt-100 max-sm:mb-60">
           <div className="relative text-center max-lg:mb-0 pl-10 pr-10">
             <BaseTitle scrollRef={scrollToRef1} text="COMO FUNCIONA" />
@@ -175,18 +175,18 @@ const Home = () => {
             <div>
               <p>NOS SIGA</p>
               <p className="flex justify-evenly gap-2 pt-5">
-                <CiInstagram
+                {/* <CiInstagram
                   size={40}
                   className="cursor-pointer max-sm:w-10 max-sm:h-10"
-                />
+                /> */}
                 <CiLinkedin
                   size={40}
                   className="cursor-pointer max-sm:w-10 max-sm:h-10"
                   onClick={() => {
-                      window.open(
-                        'https://www.linkedin.com/company/olhai-tech',
-                        '_blank' // <- This is what makes it open in a new window.
-                      );
+                    window.open(
+                      'https://www.linkedin.com/company/olhai-tech',
+                      '_blank'
+                    )
                   }}
                 />
               </p>
