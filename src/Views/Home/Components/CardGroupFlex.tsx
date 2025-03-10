@@ -1,6 +1,6 @@
 import { LegacyRef } from 'react'
 import { BaseTitleForExemples } from '.'
-import { exempleImages } from '../Home'
+import { exempleImages } from '../../../Utils'
 
 type CardGroupFlexType = {
   scrollRef?: LegacyRef<HTMLParagraphElement>
@@ -14,7 +14,7 @@ const CardGroupFlex = ({ scrollRef }: CardGroupFlexType) => {
     >
       <div className="flex justify-center max-2xl:flex-col">
         <div className=" mb-20 pl-20 pr-20 max-md:pl-5 max-md:pr-5">
-          <BaseTitleForExemples text="Detecção de Falhas e contagem" />
+          <BaseTitleForExemples text="Detecção de Falhas e Contagem" />
           <p className="max-w-200 w-full  mt-10 text-base font-bold h-[120px] max-2xl:h-auto">
             Com a olhAI, seu produto terá muito mais garantias de chegar em
             perfeito estado ao cliente final, detectando com precisão tanto

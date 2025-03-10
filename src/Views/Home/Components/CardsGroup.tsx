@@ -1,5 +1,5 @@
 import { CardHome1 } from '../../../Components'
-import { ExempleImageLabels } from '../Home'
+import { ExempleImageLabels } from '../../../Utils'
 
 type CardsGroupType = {
   callForImageChange: (exemple: ExempleImageLabels) => void

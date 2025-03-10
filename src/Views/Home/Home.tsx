@@ -1,67 +1,25 @@
-import { RefObject, useRef } from 'react'
+import {  useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
-import { CiInstagram, CiLinkedin } from 'react-icons/ci'
+import { CiLinkedin } from 'react-icons/ci'
 
 import { Nav, Button, BaseTitle } from '../../Components'
 import { CardGroupFlex } from './Components'
 
 import image from '../../assets/image_1.jpg'
 
-import exemple_security from '../../assets/image_5.png'
-import exemple_quality from '../../assets/image_4.png'
-import exemple_ergonomy from '../../assets/image_3.png'
-
 import cam_image from '../../assets/cam.jpg'
 import app_image from '../../assets/app.jpg'
 import ia_image from '../../assets/ia.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import { useWindowSize } from '../../Hooks'
-
-const scroll = (ref: RefObject<HTMLHeadingElement>, offset?: number) => {
-  if (ref.current) {
-    const yOffset = offset ? -1 * offset : -30 // Define o espaçamento acima do elemento (ajuste conforme necessário)
-    console.log({ yOffset })
-
-    const y = ref.current.getBoundingClientRect().top + window.scrollY + yOffset
-    window.scrollTo({ top: y, behavior: 'smooth' })
-  }
-}
-export type ExempleImageLabels =
-  | 'exemple_security'
-  | 'exemple_quality'
-  | 'exemple_ergonomy'
-
-// eslint-disable-next-line react-refresh/only-export-components
-export const exempleImagesLabels = {
-  0: 'exemple_quality',
-  1: 'exemple_security',
-  2: 'exemple_ergonomy',
-}
-
-export const exempleImages = {
-  exemple_security: {
-    image: exemple_security,
-    opacity: 100,
-    carouselId: 0,
-  },
-  exemple_quality: {
-    image: exemple_quality,
-    opacity: 100,
-    carouselId: 1,
-  },
-  exemple_ergonomy: {
-    image: exemple_ergonomy,
-    opacity: 100,
-    carouselId: 2,
-  },
-}
+import { scroll } from '../../Utils'
 
 const Home = () => {
   const scrollToRef1 = useRef<HTMLParagraphElement>(null)
   const scrollToRef2 = useRef<HTMLImageElement>(null)
   const { width } = useWindowSize()
   const navigate = useNavigate()
-
+  
   return (
     <div>
       <main>

@@ -7,7 +7,7 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import { CardHome1 } from '../../../Components'
 import { useContext } from 'react'
-import { exempleImagesLabels } from '../Home'
+import { exempleImagesLabels } from '../../../Utils'
 
 type CarouselType = { callback: (data: string) => void }
 

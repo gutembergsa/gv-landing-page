@@ -1,6 +1,6 @@
 import { LegacyRef, useState } from 'react'
 import { CardsGroup, Carousel } from '.'
-import { ExempleImageLabels, exempleImages } from '../Home'
+import { ExempleImageLabels, exempleImages } from '../../../Utils'
 
 type ExempleHeroType = {
   scrollRef?: LegacyRef<HTMLParagraphElement>
