@@ -7,7 +7,6 @@ export type ExempleImageLabels =
   | 'exemple_quality'
   | 'exemple_ergonomy'
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const exempleImagesLabels = {
   0: 'exemple_quality',
   1: 'exemple_security',
