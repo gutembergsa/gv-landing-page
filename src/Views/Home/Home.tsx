@@ -1,4 +1,4 @@
-import {  useRef } from 'react'
+import { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { CiLinkedin } from 'react-icons/ci'
 
@@ -19,7 +19,7 @@ const Home = () => {
   const scrollToRef2 = useRef<HTMLImageElement>(null)
   const { width } = useWindowSize()
   const navigate = useNavigate()
-  
+
   return (
     <div>
       <main>
