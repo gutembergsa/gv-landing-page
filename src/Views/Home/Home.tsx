@@ -86,14 +86,14 @@ const Home = () => {
           <CardGroupFlex scrollRef={scrollToRef2} />
         </section>
         {/* Seção demo */}
-        <section className="hidden mt-50 bg-gray-400 w-full h-150 flex justify-center gap-40 items-center max-xl:flex-col max-xl:h-180 max-xl:gap-10 max-xl:p-3 max-sm:p-6 max-sm:h-160">
+        <section className="mt-50 bg-gray-400 w-full h-150 flex justify-center gap-40 items-center max-xl:flex-col max-xl:h-180 max-xl:gap-10 max-xl:p-3 max-sm:p-6 max-sm:h-160">
           <div className="w-120 max-lg:w-[80%] max-sm:w-full">
-            <p className="text-2xl font-black">Mini Demo</p>
+            <p className="text-2xl font-black">Demo</p>
             <div className="w-40 h-1 bg-black rounded-2xl  mt-3 mb-10 max-md:w-30 max-md:mb-6 max-sm:w-27"></div>
-            <p className="text-lg font-medium max-md:text-base">
+            <p className="text-xl font-semibold max-md:text-base">
               A OlhAI possui um time de especialistas que, junto com você, irão
               entender e trazer soluções para o seu negócio. <br />
-              <span className="text-white text-base/10 font-bold max-md:leading-4">
+              <span className="text-white text-xl2/10 font-bold max-md:leading-4">
                 {' '}
                 Veja aqui nosso módulo de contagem em ação.
               </span>
@@ -101,9 +101,14 @@ const Home = () => {
           </div>
           <div>
             <video
-              src=""
               className="w-full h-80 m-auto bg-black rounded-md max-sm:h-60"
-            ></video>
+              controls
+            >
+              <source
+                src="https://q4hfcoxcg9qsukse.public.blob.vercel-storage.com/demo%202-en6DST4AmFCCnJldNAZ77fvrXEmWWq.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </section>
         {/* Seção promo */}
