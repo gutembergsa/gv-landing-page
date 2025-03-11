@@ -132,7 +132,7 @@ const Home = () => {
             <div>
               <p>FALE CONOSCO</p>
               <p className="font-normal pt-5">
-                <a href="mailto:contato@olhai.com">contato@olhai.tech</a>
+                <a href="mailto:contato@olhai.com">contato@olhai.com</a>
               </p>
             </div>
             <div>
