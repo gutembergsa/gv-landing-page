@@ -138,10 +138,6 @@ const Home = () => {
             <div>
               <p>NOS SIGA</p>
               <p className="flex justify-evenly gap-2 pt-5">
-                {/* <CiInstagram
-                  size={40}
-                  className="cursor-pointer max-sm:w-10 max-sm:h-10"
-                /> */}
                 <CiLinkedin
                   size={40}
                   className="cursor-pointer max-sm:w-10 max-sm:h-10"
