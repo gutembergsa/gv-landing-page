@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import axios from 'axios'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 import accident_img from '../../assets/image_7.png'
+import { IoIosArrowDown } from 'react-icons/io'
+import { scroll } from '../../Utils'
 
 type Inputs = {
   name: string
@@ -13,6 +15,8 @@ type Inputs = {
 }
 
 const Subscribe = () => {
+  const scrollToRef1 = useRef<HTMLFormElement>(null)
+
   const { register, handleSubmit, reset } = useForm<Inputs>()
 
   const [loading, setLoading] = useState(false)
@@ -37,25 +41,40 @@ const Subscribe = () => {
   }
 
   return (
-    <div className="bg-[#87BF74] items-center m-auto p-25 space-y-35 pl-50 pr-50 max-xl:pl-20 max-xl:pr-20 max-md:pl-10 max-md:pr-10 max-sm:pl-5 max-sm:pr-5">
-      <div className="flex flex-row justify-evenly gap-30 max-lg:gap-0">
-        <div className="flex flex-col justify-center">
-          <p className="text-5xl/snug text-gray-700 font-black max-w-150 w-full max-xl:leading-10 max-xl:text-2xl max-xl:max-w-110 max-md:max-w-90">
-            Entre em contato e vamos resolver junto as dores da sua
-            empresa.{' '}
-          </p>
-          <p className="mt-5 text-xl/snug text-white font-black max-w-150 w-full max-xl:leading-8 max-xl:text-lg max-xl:max-w-110">
-            Sua solução em sistema de visão, customizada e feita sob medida esta
-            aqui!
-          </p>
+    <div className="bg-[#87BF74] items-center m-auto p-25 space-y-150 pl-50 pr-50 max-xl:pl-20 max-xl:pr-20 max-md:pl-10 max-md:pr-10 max-sm:pl-5 max-sm:pr-5">
+      <div className="flex flex-col justify-center max-lg:gap-0">
+        <div className="flex relative justify-center items-center space-x-20 max-lg:space-x-0">
+          <div>
+            <p className="text-5xl/snug text-gray-700 font-black max-w-150 w-full max-xl:leading-10 max-xl:text-3xl max-xl:max-w-110 max-md:max-w-90">
+              Entre em contato e vamos resolver junto as dores da sua
+              empresa.{' '}
+            </p>
+            <p className="mt-15 text-3xl/snug text-white font-black max-w-150 w-full max-xl:leading-8 max-xl:text-xl max-xl:max-w-110">
+              Sua solução em sistema de visão, customizada e feita sob medida
+              esta aqui!
+            </p>
+          </div>
+          <div className="max-lg:hidden">
+            <img
+              className="w-120 h-120  max-2xl:w-100 max-2xl:h-100  max-xl:w-90 max-xl:h-90  max-lg:w-70 max-lg:h-70 max-md:hidden"
+              src={accident_img}
+              alt="banner"
+            />
+          </div>
         </div>
-        <img
-          src={accident_img}
-          alt="accident_img"
-          className="w-120 h-120  max-2xl:w-100 max-2xl:h-100  max-xl:w-90 max-xl:h-90  max-lg:w-70 max-lg:h-70 max-md:hidden"
-        />
+        <div
+          onClick={() => scroll(scrollToRef1, 100)}
+          className="flex justify-center align-middle w-10 rounded-full m-auto"
+        >
+          <div className="cursor-pointer absolute bottom-[10px] w-10 h-10 bg-white z-1 rounded-full  animate-ping"></div>
+          <IoIosArrowDown
+            size={30}
+            className="cursor-pointer absolute bottom-[12px]"
+            onClick={() => scroll(scrollToRef1, 100)}
+          />
+        </div>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form ref={scrollToRef1} onSubmit={handleSubmit(onSubmit)}>
         <input type="hidden" name="_gotcha" className="hidden" />
 
         <div className="space-y-12 bg-white shadow-[0px_-0px_10px_rgba(0,0,0,0.3)] p-20 rounded-md  max-sm:p-7">

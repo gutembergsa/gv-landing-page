@@ -1,6 +1,7 @@
-import { RefObject } from "react"
+import { RefObject } from 'react'
 
-export const scroll = (ref: RefObject<HTMLHeadingElement>, offset?: number) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const scroll = (ref: RefObject<any>, offset?: number) => {
   if (ref.current) {
     const yOffset = offset ? -1 * offset : -30 // Define o espaçamento acima do elemento (ajuste conforme necessário)
     console.log({ yOffset })
@@ -9,4 +10,3 @@ export const scroll = (ref: RefObject<HTMLHeadingElement>, offset?: number) => {
     window.scrollTo({ top: y, behavior: 'smooth' })
   }
 }
-
