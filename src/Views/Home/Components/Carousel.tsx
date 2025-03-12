@@ -37,7 +37,6 @@ const Carousel = ({ callback }: CarouselType) => {
       <Slide
         index={1}
         innerClassName="flex justify-center items-center"
-        onFocus={() => console.log('test')}
       >
         <CardHome1
           title="Segurança"

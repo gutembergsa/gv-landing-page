@@ -28,13 +28,11 @@ const Subscribe = () => {
       .post('https://formspree.io/f/xzzeploa', data, {
         headers: { Accept: 'application/json' },
       })
-      .then((response) => {
-        console.log(response)
+      .then(() => {
         setLoading(false)
         setSent(true)
       })
-      .catch((error) => {
-        console.log(error)
+      .catch(() => {
         setLoading(false)
       })
     reset()
