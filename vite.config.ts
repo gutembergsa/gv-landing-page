@@ -10,4 +10,5 @@ export default defineConfig({
     tailwindcss(),
     patchCssModules(), // ← This is all you need to add!
   ],
+  publicDir: 'public',
 })
