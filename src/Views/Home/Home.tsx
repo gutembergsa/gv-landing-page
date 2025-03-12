@@ -114,7 +114,7 @@ const Home = () => {
         {/* Seção promo */}
         <section className="text-center  mt-50 mb-50 max-md:mb-25 max-md:mt-25">
           <p className="m-auto mb-20 text-4xl font-extrabold max-w-150 max-md:max-w-120 max-md:text-2xl max-sm:pl-10 max-sm:pr-10">
-            Gostou? Clique e traga seu negocio para o futuro
+            Gostou? Clique e traga seu negócio para o futuro
           </p>
           <Link
             to="/subscribe"
