@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { CarouselProvider } from 'pure-react-carousel'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Home, Subscribe } from './Views'
 
@@ -31,5 +32,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <Analytics />
   </StrictMode>
 )
