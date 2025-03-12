@@ -29,9 +29,11 @@ const router = createBrowserRouter([
   },
 ])
 
+export const Router = <RouterProvider router={router} />
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    {Router}
     <Analytics />
   </StrictMode>
 )
