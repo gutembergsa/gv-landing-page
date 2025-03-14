@@ -38,10 +38,6 @@ createRoot(document.getElementById('root')!).render(
       <Helmet>
         <title>olhAI</title>
         <meta
-          name="google-site-verification"
-          content="yvvFmGjsP6baaYBQWZbjaQLzzs-FUMEVC85FUSk0ivU"
-        />
-        <meta
           name="description"
           content="Sistemas de visão para seu processo."
         />
