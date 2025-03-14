@@ -37,6 +37,7 @@ createRoot(document.getElementById('root')!).render(
     <HelmetProvider>
       <Helmet>
         <title>olhAI</title>
+        <meta name="google-site-verification" content="yvvFmGjsP6baaYBQWZbjaQLzzs-FUMEVC85FUSk0ivU" />
         <meta
           name="description"
           content="Sistemas de visão para seu processo."
@@ -60,7 +61,7 @@ createRoot(document.getElementById('root')!).render(
       </Helmet>
 
       {Router}
-      <Analytics />
+      {/* <Analytics /> */}
     </HelmetProvider>
   </StrictMode>
 )

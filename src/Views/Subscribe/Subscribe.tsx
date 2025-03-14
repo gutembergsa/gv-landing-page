@@ -60,7 +60,7 @@ const Subscribe = () => {
             />
           </div>
         </div>
-        <div
+        {/* <div
           onClick={() => scroll(scrollToRef1, 100)}
           className="flex justify-center align-middle w-10 rounded-full m-auto"
         >
@@ -70,9 +70,9 @@ const Subscribe = () => {
             className="cursor-pointer absolute bottom-[12px]"
             onClick={() => scroll(scrollToRef1, 100)}
           />
-        </div>
+        </div> */}
       </div>
-      <form ref={scrollToRef1} onSubmit={handleSubmit(onSubmit)}>
+      {/* <form ref={scrollToRef1} onSubmit={handleSubmit(onSubmit)}>
         <input type="hidden" name="_gotcha" className="hidden" />
 
         <div className="space-y-12 bg-white shadow-[0px_-0px_10px_rgba(0,0,0,0.3)] p-20 rounded-md  max-sm:p-7">
@@ -122,25 +122,7 @@ const Subscribe = () => {
                 </div>
               </div>
 
-              <div className="sm:col-span-3">
-                <label
-                  htmlFor="email"
-                  className="block text-sm/6 font-medium text-gray-900"
-                >
-                  Email <span className="text-rose-800">*</span>
-                </label>
-                <div className="mt-2">
-                  <input
-                    {...register('email')}
-                    required
-                    type="email"
-                    autoComplete="email"
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#87BF74] autofill-white sm:text-sm/6"
-                  />
-                </div>
-              </div>
-
-              <div className="sm:col-span-3">
+              <div className="sm:col-span-full">
                 <label
                   htmlFor="phone"
                   className="block text-sm/6 font-medium text-gray-900"
@@ -189,7 +171,7 @@ const Subscribe = () => {
             </button>
           </div>
         </div>
-      </form>
+      </form> */}
     </div>
   )
 }
