@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { CarouselProvider } from 'pure-react-carousel'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { Analytics } from '@vercel/analytics/react'
 
 import { Home, Subscribe } from './Views'
 

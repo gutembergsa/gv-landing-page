@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { CiLinkedin } from 'react-icons/ci'
 
-import { Nav, Button, BaseTitle } from '../../Components'
+import { Nav, BaseTitle } from '../../Components'
 import { CardGroupFlex } from './Components'
 
 import image from '../../assets/image_1.jpg'
@@ -10,7 +10,7 @@ import image from '../../assets/image_1.jpg'
 import cam_image from '../../assets/cam.jpg'
 import app_image from '../../assets/app.jpg'
 import ia_image from '../../assets/ia.jpg'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useWindowSize } from '../../Hooks'
 import { scroll } from '../../Utils'
 
@@ -18,7 +18,6 @@ const Home = () => {
   const scrollToRef1 = useRef<HTMLParagraphElement>(null)
   const scrollToRef2 = useRef<HTMLImageElement>(null)
   const { width } = useWindowSize()
-  const navigate = useNavigate()
 
   return (
     <div>
@@ -35,10 +34,17 @@ const Home = () => {
                 Use sistemas de visão para alcançar melhorias reais em
                 qualidade, segurança, economia de recursos e muito mais.
               </h2>
-              <Button
-                content="FAZ SENTIDO? CLIQUE AQUI E REGISTRE-SE!"
-                onClick={() => navigate('/subscribe')}
-              />
+              <Link
+                to="https://calendly.com/gutemberg-silvasa/30min"
+                className="flex items-center text-center self-center w-45 h-20 outline-none 
+                border-none rounded-sm p-3 bg-[#87BF74] text-xs/4 tracking-wid 
+                font-554 font-extrabold text-zinc-50  select-none 
+                transform active:bg-[#87BF74E0] active:translate-y-[4px]
+                max-lg:w-40 max-lg:h-15 max-lg:pt-[9px]
+                max-md:m-auto max-md:text-[12px] max-md:font-bold max-md:w-48 max-md:p-3"
+              >
+                FAZ SENTIDO? VAMOS CONVERSAR!
+              </Link>
             </div>
             <div className="max-lg:hidden">
               <img src={image} alt="banner" />
@@ -117,11 +123,21 @@ const Home = () => {
             Gostou? Clique e traga seu negócio para o futuro
           </p>
           <Link
+            to="https://calendly.com/gutemberg-silvasa/30min"
+            className="flex justify-center items-center text-center self-center w-45 h-15 m-auto outline-none 
+                border-none rounded-sm p-3 bg-[#87BF74] text-xs/4 tracking-wide
+                font-554 font-extrabold text-zinc-50  
+                transform active:bg-[#87BF74E0] active:translate-y-[4px]
+                max-md:w-35  max-md:text-[11px]"
+          >
+            VAMOS CONVERSAR!{' '}
+          </Link>
+          {/* <Link
             to="/subscribe"
             className="self-center p-4 outline-none border-none rounded-sm  bg-[#87BF74] text-md/4 tracking-wider font-554 font-extrabold text-white max-md:w-25 max-md:h-10 max-md:block max-md:m-auto max-md:text-[12px] active:bg-[#87BF74E0] active:translate-y-[4px] max-md:pt-[11px]"
           >
-            ADQUIRIR
-          </Link>{' '}
+            VAMOS CONVERSAR!
+          </Link>{' '} */}
         </section>
         {/* Seção footer */}
         <section className="bg-black p-1 pt-25 pb-25">

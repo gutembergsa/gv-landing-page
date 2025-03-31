@@ -60,7 +60,7 @@ const Subscribe = () => {
             />
           </div>
         </div>
-        {/* <div
+        <div
           onClick={() => scroll(scrollToRef1, 100)}
           className="flex justify-center align-middle w-10 rounded-full m-auto"
         >
@@ -70,9 +70,9 @@ const Subscribe = () => {
             className="cursor-pointer absolute bottom-[12px]"
             onClick={() => scroll(scrollToRef1, 100)}
           />
-        </div> */}
+        </div>
       </div>
-      {/* <form ref={scrollToRef1} onSubmit={handleSubmit(onSubmit)}>
+      <form ref={scrollToRef1} onSubmit={handleSubmit(onSubmit)}>
         <input type="hidden" name="_gotcha" className="hidden" />
 
         <div className="space-y-12 bg-white shadow-[0px_-0px_10px_rgba(0,0,0,0.3)] p-20 rounded-md  max-sm:p-7">
@@ -171,7 +171,7 @@ const Subscribe = () => {
             </button>
           </div>
         </div>
-      </form> */}
+      </form>
     </div>
   )
 }

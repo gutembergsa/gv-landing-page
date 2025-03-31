@@ -21,7 +21,7 @@ const Nav = ({ logo }: NavType) => {
           olh<span className="text-6xl max-lg:text-4xl">AI</span>
         </Link>
         <Link
-          to="/subscribe"
+          to="https://calendly.com/gutemberg-silvasa/"
           className="text-center self-center w-35 h-auto outline-none border-none rounded-sm p-3 bg-[#87BF74] text-xs font-554  font-medium text-zinc-50  select-none
         max-lg:p-3 max-lg:text-[9px] max-sm:hidden 
         transform active:bg-[#87BF74E0] active:translate-y-[4px]"
