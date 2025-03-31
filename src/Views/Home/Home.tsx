@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { CiLinkedin } from 'react-icons/ci'
 
@@ -10,9 +11,9 @@ import image from '../../assets/image_1.jpg'
 import cam_image from '../../assets/cam.jpg'
 import app_image from '../../assets/app.jpg'
 import ia_image from '../../assets/ia.jpg'
-import { Link } from 'react-router-dom'
 import { useWindowSize } from '../../Hooks'
-import { scroll } from '../../Utils'
+
+import { CALENDLY_URL, scroll } from '../../Utils'
 
 const Home = () => {
   const scrollToRef1 = useRef<HTMLParagraphElement>(null)
@@ -35,7 +36,7 @@ const Home = () => {
                 qualidade, segurança, economia de recursos e muito mais.
               </h2>
               <Link
-                to="https://calendly.com/gutemberg-silvasa/30min"
+                to={CALENDLY_URL}
                 className="flex items-center text-center self-center w-45 h-20 outline-none 
                 border-none rounded-sm p-3 bg-[#87BF74] text-xs/4 tracking-wid 
                 font-554 font-extrabold text-zinc-50  select-none 
@@ -123,7 +124,7 @@ const Home = () => {
             Gostou? Clique e traga seu negócio para o futuro
           </p>
           <Link
-            to="https://calendly.com/gutemberg-silvasa/30min"
+            to={CALENDLY_URL}
             className="flex justify-center items-center text-center self-center w-45 h-15 m-auto outline-none 
                 border-none rounded-sm p-3 bg-[#87BF74] text-xs/4 tracking-wide
                 font-554 font-extrabold text-zinc-50  

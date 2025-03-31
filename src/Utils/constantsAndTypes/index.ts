@@ -30,3 +30,5 @@ export const exempleImages = {
     carouselId: 2,
   },
 }
+
+export const CALENDLY_URL = 'https://calendly.com/gutemberg-silvasa/olhai'
