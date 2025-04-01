@@ -42,17 +42,13 @@ createRoot(document.getElementById('root')!).render(
           content="yvvFmGjsP6baaYBQWZbjaQLzzs-FUMEVC85FUSk0ivU"
         />
         <meta
-          name="description"
-          content="Sistemas de visão para seu processo."
-        />
-        <meta
           name="keywords"
-          content="ia, ai, visão computacional, industria 4.0, processamento de imagem, software"
+          content="olhai, OlhAI, olhai.tech, ia, ai, visão computacional, industria 4.0, processamento de imagem, software"
         />
         <meta property="og:title" content="olhAI" />
         <meta
           property="og:description"
-          content="IA que faz sentido para o seu negocio."
+          content="Sistemas de visão para seu processo."
         />
         <meta
           property="og:image"

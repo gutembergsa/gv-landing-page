@@ -6,14 +6,16 @@ import { CiLinkedin } from 'react-icons/ci'
 import { Nav, BaseTitle } from '../../Components'
 import { CardGroupFlex } from './Components'
 
+import { useWindowSize } from '../../Hooks'
+
+import { CALENDLY_URL, scroll } from '../../Utils'
+
 import image from '../../assets/image_1.jpg'
 
 import cam_image from '../../assets/cam.jpg'
 import app_image from '../../assets/app.jpg'
 import ia_image from '../../assets/ia.jpg'
-import { useWindowSize } from '../../Hooks'
 
-import { CALENDLY_URL, scroll } from '../../Utils'
 
 const Home = () => {
   const scrollToRef1 = useRef<HTMLParagraphElement>(null)
